@@ -2,7 +2,7 @@
 
 This is a simple blog API Backend
 
-# Description
+## Description
 
 This is the backend implementation of a blog application where user can login, authenticate by JWT and perform CRUD operations on posts(Create, Read, Update, Delete).
 
