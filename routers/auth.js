@@ -54,6 +54,7 @@ router.post("/login", async (req, res) => {
       //製作JWT
       const tokenObject = { _id: foundUser._id, email: foundUser.email };
       const token = jwt.sign(tokenObject, process.env.PASSPORT_SECRET);
+      console.log(req);
       return res.send({
         message: "登入成功",
         token: "JWT " + token, //JWT後方一定要空格否則會出現bug
